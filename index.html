@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="lang">
+        <p>SELECT LANGUAGE</p>
+        <img src="lang.png" class="img-lang"/>
+    </section>
+    <style>
+        body{
+            margin: 0;
+            padding-top: 0;
+            font-family: Arial, sans-serif;
+             box-sizing: border-box;
+             
+        }
+        .lang{
+            background-color:#8E6E86;
+            display: flex;
+            gap: 20px;
+            margin-top: 0;
+            
+            padding-left: 150px;
+            padding-top: 15px;
+        }
+        .lang p{
+            margin-top: 0;
+            
+        }
+        .img-lang{
+            width: 35px;
+            height: 20px;
+        }
+    </style>
+    <section  class="logo">
+        <img src="logo.png" alt="">
+    </section>
+    <style>
+        .logo
+        {
+            text-align: center;
+        }
+        .logo img{
+            width: 130px;
+            height: 130px;
+        }
+    </style>
+     <nav>
+    <ol>
+      <li><h3>HOME</h3></li>
+      <li><h3>RETREATS</h3></li>
+      <li><h3>CONSCIOUS CONNECTION</h3></li>
+      <li><h3>TESTIMONIALS</h3></li>
+      <li><h3>PODCAST</h3></li>
+      <li><h3>SPEAK TO US</h3></li>
+    </ol>
+  </nav>
+ <style>
+    @media (max-width: 768px) {
+  nav ol {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+}
+nav ol {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  gap: 30px;
+}
+
+nav ol li h3 {
+  margin: 0;
+  font-weight: normal;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  color: #8E6E86;
+}
+
+nav ol li h3:hover {
+  color:brown;
+}
+</style>
+<section class="text">
+<h2>UNLOCK YOUR PATH TO INNER PEACE AND PERSONAL GROWTH</h2>
+<h4>Explore resources, connect with experts, and embrace a holistic approach to mental wellness through tutorials, events, podcasts, and more.</h4>
+
+</section>
+<style>
+    .text{
+        text-align: center;
+    }
+    .text h2{
+        color: #8E6E86;
+        margin-top: 100px;
+        font-size:30px;
+        
+    }
+    .text h4{
+        color: #8E6E86;
+        font-size: 13px;
+        margin-top: 30px
+    }
+</style>
+
+<section class="back">
+   
+    <button class="one">START LEARNING</button>
+    <button class="two">SPEAK TO US</button>
+    <section class="clouds">
+    <img src="cloud1.png" class="c1"/>
+    <img src="cloud2.png" class="c2"/>
+    <img src="cloud3.png" class="c3"/>
+    <img src="cloud4.png" class="c4"/>
+    <img src="cloud5.png" class="c5"/>
+    </section>
+    
+
+
+</section>
+<style>
+ .back {
+    position: relative; /* Required for absolute positioning inside */
+    background-image: url(back01.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -100px;
+    height: 564px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+/* Cloud container (positioned absolutely behind buttons) */
+.clouds {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Clouds below buttons */
+}
+
+/* Individual clouds (adjust positions as needed) */
+.c1, .c2, .c3, .c4, .c5 {
+    position: absolute;
+}
+.c1 { top: 20%; left: 10%; }
+.c2 { top: 30%; right: 15%; }
+/* Add more positions for other clouds */
+
+/* Buttons (appear above clouds) */
+.back button {
+    position: relative; /* Allows z-index to work */
+    z-index: 2; /* Higher than clouds */
+    background-color: #8E6E86;
+    color: aliceblue; 
+    border: none; /* Optional: Removes default button border */
+    cursor: pointer; /* Shows hand cursor on hover */
+}
+
+.one {
+    padding: 10px 20px;
+}
+.two {
+    padding: 10px 23px;
+}
+/* Add these rules to your existing CSS */
+/* Updated cloud animations - faster speeds */
+.c1 {
+    top: 20%;
+    left: 10%;
+    animation: floatLeftRight 10s infinite linear; /* Was 15s */
+}
+.c2 {
+    top: 30%;
+    right: 15%;
+    animation: floatRightLeft 8s infinite linear; /* Was 12s */
+}
+.c3 {
+    top: 50%;
+    left: 20%;
+    animation: floatLeftRight 14s infinite linear; /* Was 18s */
+}
+.c4 {
+    top: 60%;
+    right: 25%;
+    animation: floatRightLeft 10s infinite linear; /* Was 14s */
+}
+.c5 {
+    top: 40%;
+    left: 30%;
+    animation: floatLeftRight 16s infinite linear; /* Was 20s */
+}
+
+/* Define the animation keyframes */
+@keyframes floatLeftRight {
+    0%, 100% { transform: translateX(-50px); }
+    50% { transform: translateX(50px); }
+}
+@keyframes floatRightLeft {
+    0%, 100% { transform: translateX(50px); }
+    50% { transform: translateX(-50px); }
+    
+}
+
+</style>
+<section class="page2">
+<h2 >LEARN</h2>
+<h1>HEAL</h1>
+<h2>GROW</h2>
+
+<img src="back02.png" class="back03"/>
+<div class="small-images">
+  <img src="small1.png" class="s1"/>
+  <img src="small2.png" class="s2"/>
+  <img src="small3.png" class="s3"/>
+  <img src="small4.png" class="s4"/>
+
+  <div class="small-icon sm1">
+    <img src="sm1.png" />
+  </div>
+  <div class="small-icon sm2">
+    <img src="sm2.png" />
+  </div>
+  <div class="small-icon sm3">
+    <img src="sm3.png" />
+  </div>
+  <div class="small-icon sm4">
+    <img src="sm4.png" />
+  </div>
+  <div class="text1">
+    <section class="at1">
+    <h5 class="t1">
+        NOT JUST A RETREAT 
+    </h5>
+    <h5 class="a1">
+        <br>A RESET FOR YOUR ENTIRE BEING
+    </h5>
+    </section>
+    <section class="at2">
+    <h5 class="t2">
+        A CLEAR, STRUCTURED<br> PATH 
+    </h5>
+    <h5 class="a2">
+        ONE THEME PER DAY, <br>EACH BUILDING ON THE LAST.
+    </h5>
+    </section>
+    <section class="at3">
+    <h5 class="t3">
+        NO FLUFF, NO PREACHY WORKSHOPS 
+    </h5>
+    <h5 class="a3">
+        ONLY AUTHENTIC,<br> TIME-TESTED PRACTICES
+    </h5>
+    </section>
+    <section class="at4">
+    <h5 class="t4">
+        OUR SUPPORT 
+    </h5>
+    <h5 class="a4">
+        THROUGH GUIDED MATERIAL AND<br> COMMUNITY TOUCHPOINTS.
+    </h5>
+    </section>
+  </div>
+</div>
+
+</section>
+<style>
+     @media (max-width: 768px) {
+        .page2 h2{
+             font-size: 10px;
+        letter-spacing: -5px;
+        transform: scaleY(1.2);
+
+
+        }
+     }
+    .text1 {
+  position: absolute;
+  top: 480px; /* slightly below the icons */
+ 
+  display: flex;
+  gap: 80px; /* spacing between texts */
+  z-index: 3;
+}
+
+.at1, .at2, .at3, .at4 {
+  display: flex;
+  flex-direction: column;
+  width: /* adjust as needed */
+  color: #8E6E86;
+  text-align: left;
+  font-size: 12px;
+}
+.at1{ 
+    position: relative;
+    font-size: 20px;
+    left: 10px;
+}
+.t1{
+    color: #8E6E86;
+}
+.a1{
+    color: white;
+
+}
+.at2{
+    position: relative;
+    font-size: 20px; 
+   
+}
+.t2{
+    color: #8E6E86;
+}
+.a2{
+    color: white;
+
+}
+.at3{
+    position: relative;
+    font-size: 20px;
+    left: 20px;
+}
+.t3{
+    color: #8E6E86;
+}
+.a3{
+    color: white;
+
+}
+.at4{
+   right: 0px;
+   font-size: 20px;
+}
+.t4{
+    color: #8E6E86;
+}
+.a4{
+    color: white;
+
+}
+    .sm1 {
+  position: absolute;
+  top: 420px;
+  left: 60px;
+}
+
+.sm2 {
+  position: absolute;
+  top: 420px;
+  left: 370px;
+}
+
+.sm3 {
+  position: absolute;
+  top: 420px;
+  left: 680px;
+}
+
+.sm4 {
+  position: absolute;
+  top: 420px;
+  left: 980px;
+}
+
+.small-icon img {
+  width: 40px;
+  height: 40px;
+}
+    .small-icon{
+        
+        display: flex;
+        flex-direction: row;
+        z-index: 2;
+        height: 25px;
+    }
+    .small-images{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        gap: 55px;
+        
+    }
+   
+    .s1,.s2,.s3,.s4{
+       width: 250px;
+        z-index:2 ;
+        margin-top: 400px;
+       
+
+    }
+.back03{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    margin-top: 115px;
+}
+    .page2
+    {
+        
+        display: flex;
+        margin-top: 270px;
+        text-align: center;
+        justify-content: center;
+        gap:7px;
+        
+    }
+    .page2 h2{
+        color: #8E6E86;
+       font-size: 70px;
+        letter-spacing: -2px;
+        transform: scaleY(1.2);
+    }
+    .page2 h1{
+        color:#BAAEB7;
+         font-size: 140px;  
+           transform: scaleY(2.5);
+          position: relative;
+          z-index: 2;
+            display: inline-block;
+            position: relative; 
+            top: -100px;
+    
+    } 
+
+</style> 
+<h2 style="color:white;display: flex;justify-content:center;margin-top: -150px;font-size: 70px;position: relative;
+          z-index: 2;font-weight: 150;letter-spacing: 7px;">WITH US</h2>
+<section class="back3">
+    <img src="back03.png" alt="" class="back03-img">
+    </section>
+<style>
+.back3 {
+    position: absolute;
+    margin-top: 540px;
+  width: 100%;
+}
+
+.back03-img {
+  height: 100%;         
+  width: 100%;            
+}
+
+    </style>
+    <section class="back04">
+<img src="back04.png" class="img-back04" style="object-fit:contain;">
+<section class="fl">
+<h3>WHY </h3>
+<h1>SEVEN </h1>
+
+<h4>
+ DOORS TO <br>HEAVEN ?
+</h4></section>
+</section>
+<style>
+   .fl {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+    html body{
+        overflow-x: hidden;
+    }
+    .img-back04{
+        position: relative;
+        margin-top: 100%;
+        z-index: 1;
+        
+        
+    }.back04{
+        position: relative;
+        text-align: center;
+        
+
+    }
+    .back04 h3{
+        position: absolute;
+        top: -800px;
+        left: 150px;
+        color: #8E6E86;
+        font-size: 90px;
+        
+        font-family: 'Arial Narrow', 'Helvetica Neue', sans-serif;
+        font-weight: 10;
+        
+    }
+    .back04 h1{
+        position: absolute;
+        color: #BAAEB7;
+        font-size:200px;
+        top: -1050px;
+        left: 410px;
+        z-index: 2;
+        transform: scaleY(2.0);
+      
+    }
+    .back04 h4{
+        
+       position: absolute;
+       z-index: 2;
+       font-size: 60px;
+       top: -800px;
+       left: 1150px;
+        
+        font-family: 'Arial Narrow', 'Helvetica Neue', sans-serif;
+        font-weight: 10;
+       
+        color: #8E6E86;
+    }
+</style>
+<section class="pillor"> 
+    <img src="p1.png" style="height: 300px;width: 150px;">
+    <img src="p2.png" style="height: 300px;width: 150px;transform: scaleY(1.5); /* Stretches image vertically by 1.5x */
+  transform-origin: bottom;"/>
+    <img src="p3.png" style="height: 300px;width: 150px;"/>
+    <img src="p4.png" style="height: 300px;width: 150px;"/>
+    <img src="p5.png" style="height: 300px;width: 150px;"/>
+    <img src="p6.png" style="height: 300px;width: 150px;"/>
+    <img src="p7.png" style="height: 300px;width: 150px;"/>
+</section>
+<style>
+    .pillor{
+        position: relative;
+        display:flex;
+        z-index: 3;
+        gap: 65px;
+        left: 35px;
+        bottom: 180px;
+
+    }
+</style>
+<div class="ptext">
+    <p>
+        Let go of what no longer serves<br> through safe, supported emotional<br> expression.
+    </p>
+</div>
+<div class="days">
+
+
+<p>DAY 3</p>
+<p>DAY 4</p>
+<p>DAY 5</p>
+<p>DAY 6</p>
+<p>DAY 7</p>
+</div>
+<p class="unique">DAY 2</p >
+<style>
+   
+    .days{
+        display: flex;
+        position: relative;
+        bottom: 570px;
+        gap: 103px;
+        z-index: 3;
+        left: 475px;
+        color:#8E6E86;
+        font-size: 40px;
+    }
+    .ptext{
+        position: absolute;
+        top: 3850px;
+        left: 255px;
+        color: white;
+        z-index: 3;
+        font-size: 13px;
+    }
+     .unique{
+        position: absolute;
+        z-index: 3;
+        color: #8E6E86;
+         font-size: 40px;
+         top: 3770px;
+         left: 256px;
+    }
+</style>
+<section class="back05">
+    <img src="back05.png">
+    <h1>PODCAST</h1>
+    <h2>VOICES THAT HEALS AND INSPIRE</h2>
+</section>
+<style>
+    .back05 img{
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+    }
+    .back05 h1{
+        color: #0000006F;
+        position:relative;
+     bottom: 950px;
+     z-index: 3;
+     font-size: 220px;
+     text-align: center;
+     
+     transform: scaleY(1.5);
+    }
+    .back05 h2{
+         color:#8E6E86;
+        position:relative;
+     bottom: 1135px;
+     z-index: 3;
+     font-size: 65px;
+     text-align: center;
+     font-weight: 10;
+     letter-spacing: 5;
+    }
+</style>
+<section class="twoguys">
+<img src="pod.jpeg" style="height: 400px;width: 500px;margin-left: 230px;margin-top: 150px;border-radius: 20px;">
+</section>
+<style>
+    .twoguys{
+        position:absolute;
+        z-index: 3;
+       top: 5150px;
+       left: 230px;
+    }
+    .twoguys img{
+        height: auto;
+        width: 1000px;
+    }
+</style>
+<section class="guystext">
+<p>
+    VOICES THAT HEAL AND INSPIRE
+</p>
+<h3>
+    Tune into the Seven Doors Podcast for soulful conversations with thought leaders, therapists, survivors, and <br>seekers. Each episode dives deep into topics that matter: healing, transformation, self-love, and conscious<br> living.
+</h3>
+</section>
+<style>
+    .guystext{
+        color:#8E6E86;
+        position: absolute;
+         top: 5850px;
+       left: 437px;
+    }
+    .guystext p{
+        font-size: 40px;
+        font-weight: 10;
+        letter-spacing: -1.5px;
+    }
+</style>
+<section class="back06">
+<h1>RETREATS</h1>
+
+</section>
+<section class="new-img">
+    <img src="back02.png">
+</section>
+<style>
+    .back06{
+        position:absolute;
+        top: 6220px;
+        left: 300px;
+        z-index: 3;
+        transform: scaleY(2.0);
+    }
+    .back06 h1{
+        color:#BAAEB7;
+        font-size: 170px;
+
+    }
+    .new-img img{
+        margin-top: 100px;
+        position: absolute;
+        height: auto;
+        width: 100%;
+    }
+</style>
+<p class="tholla">
+    JOIN US IN HEALING TOGETHER
+</p>
+
+<style>
+    .tholla{
+        position: absolute;
+        z-index: 3;
+        top: 6600px;
+        left: 300px;
+        font-size: 70px;
+        font-weight: 10;
+        color: white;
+        letter-spacing: -2px;
+        transform: scaleY(1.3);
+
+    }
+</style>
+<section class="back07">
+    <img src="back07.png">
+</section>
+<style>
+    .back07 img{
+        position: absolute;
+        top: 6935px;
+        z-index: 2;
+        width:100%;
+        height: 1000px;
+        object-fit: cover;
+    }
+</style>
+<section class="back08">
+    <h3>UPCOMING</h3>
+    <h2>PAST</h2>
+   
+     <h5 style="margin-top: 316px;margin-left: 60px;">BOOK NOW</h5 >
+    <h5 style="margin-top: 316px;margin-left: 520px;">BOOK NOW</h5>
+    <h5 style="margin-top: 316px;margin-left: 980px;">BOOK NOW</h5>
+        <h5 style="margin-top: 796px;margin-left: 60px;">BOOK NOW</h5>
+         <h5 style="margin-top: 796px;margin-left: 520px;">BOOK NOW</h5>
+          <h5 style="margin-top: 796px;margin-left: 980px;">BOOK NOW</h5>
+
+   
+    <img src="y1.png" style="margin-bottom: 100px;">
+    <img src="y2.png" style="margin-left: 450px;margin-bottom: 100px;">
+    <img src="y3.png" style="margin-left: 900px;">
+    <img src="y4.png" style="margin-top: 480px;">
+    <img src="y5.png" style="margin-top: 480px; margin-left: 450px;" >
+    <img src="y6.png" style="margin-top: 480px;margin-left: 900px;">
+</section>
+<style>
+    .back08 h5{
+        position: absolute;
+        z-index: 5;
+        color:white;
+        display: inline;
+        background-color: #BAAEB7;
+        padding: 15px;
+        
+        
+    }
+    .back08 p, h6{
+        position: absolute;
+        z-index: 4;
+        color: rgb(226, 220, 220);
+    }
+    .back08 h3{
+        position:absolute;
+        color: #8E6E86;
+        font-size: 30px;
+        transform: scaleY(1.5);
+        font-weight: 10;
+        top: -110px;
+        letter-spacing: 2px;
+        left: -10px;
+    }
+    .back08 h2{
+        position: absolute;
+        color: #8E6E86;
+         letter-spacing: 2px;
+        left: -10px;
+         transform: scaleY(1.5);
+        font-weight: 10;
+        top: 395px;
+        
+        left: -10px;
+    }
+    .back08{
+        position:absolute;
+       
+        z-index: 3;
+        top: 7090px;
+       
+      
+    
+      left: 200px;
+      right: 200px;
+    }
+    .back08 img{
+
+        position: absolute;
+         z-index: 3;
+        height: 299px;
+        width: 250px;
+    }
+    
+</style>
+<section class="back09">
+    <p>
+        BLOG
+    </p>
+    <img src="med.png">
+</section>
+<style>
+    .back09{
+        position: absolute;
+        top: 8010px;
+        z-index: 4;
+    }
+    .back09 p{
+        top: -10px;
+        position:absolute;
+        color: #0000006F;
+        font-size: 180px;
+        transform: scaleY(2.0);
+        left: 300px;
+    }
+    .back09 img{
+        height: 180px;
+        width: 250px;
+        position: absolute;
+        left: 900px;
+        top: 220px;
+    }
+</style>
+<img src="back10.png" class="on">
+
+<section class="back10">
+    <img src="m1.png">
+    <img src="m2.png" class="ten">
+    <img src="m3.png">
+    <img src="m4.png">
+</section>
+<style>
+    .on{
+        position: absolute;
+        z-index: 0;
+        width: 100%;
+        margin-top: 1500px;
+
+    }
+
+    .back10{
+        position: absolute;
+        margin-top: 2200px;
+        left:300px ;
+        z-index: 2;
+        
+
+
+    }
+    .back10 img{
+        height: 150px;
+        width: 200px;
+        margin-right: 10px;
+        z-index: 1;
+
+    }
+    .ten{
+        z-index: 3;
+    }
+</style>
+<p style="display: inline;background-color:#8E6E86;padding: 15px;height: 230px;width: 170px;margin-top: 100000px;z-index: 0;margin-top: 2180px;position: absolute;margin-left: 506px;padding-left: 25px;padding-right: 20px;padding-top: 30px;"></p>
+<p style="color: #8E6E86;position: absolute;margin-top: 2370px;z-index: 3;font-size: 8px;margin-left: 300px;z-index: 1;">THE YOGA JOURNAL: MIND, BODY, BALANCE</p>
+<p style="color: white;position: absolute;margin-top: 2370px;z-index: 3;font-size: 8px;margin-left: 520px;" >THE INNER LIGHT</p>
+<p style="color:#8E6E86;position: absolute;margin-top: 2370px;z-index: 3;font-size: 8px;margin-left: 735px;">THE HEALING SOUND</p>
+<p style="color: #8E6E86;position: absolute;margin-top: 2370px;z-index: 3;font-size: 8px;margin-left: 950px;">MUSCLE & MIND</p>
+<h5 style="color: #A5A5A5;position: absolute;margin-top: 2400px;z-index: 3;font-size: 8px;margin-left: 300px;">Explore yoga’s power to balance your lifestyle<br> through poses, breathwork, nutrition, and mindful<br> living.</h5>
+<h5 style="color: #A5A5A5;position: absolute;margin-top: 2400px;z-index: 3;font-size: 8px;margin-left: 520px;">Shining a light on mental health through<br> stories, science, and strategies for emotional<br> balance.</h5>
+<h5 style="color: #A5A5A5;position: absolute;margin-top: 2400px;z-index: 3;font-size: 8px;margin-left: 735px;">Exploring how sound, vibration, and frequency <br>can calm the mind, heal the body, and elevate <br>the spirit.</h5>
+<h5 style="color: #A5A5A5;position: absolute;margin-top: 2400px;z-index: 3;font-size: 8px;margin-left: 945px;">Exploring how massage therapy soothes the <br>body and relaxes the mind for total wellness.</h5>
+
+</body>
+</html>
